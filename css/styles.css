@@ -1,0 +1,62 @@
+	 /* CSS GENERAL*/
+
+    html{
+        background-color: #141414;
+        font-size: 1.5rem;
+        font-family: "fin","pate", "plice2";
+
+    }
+    header{
+        background-color: black;
+        color: white;
+        position: fixed;
+        width: 100%;
+        top: 0px;
+        height: 8%;
+
+        z-index: 1000;
+        margin-bottom: 0px;
+
+
+    }
+
+    body{
+        background-color: #141414;
+        color: white;
+        margin:auto;
+        width: 100%;
+
+
+    }
+
+    main>div{
+        background-color: #dcdcdc;
+        width: 75%;
+        position: relative;
+        margin: auto;
+        padding: 15px;
+        border: 02px outset;
+        margin-top: 10px;
+        margin-bottom: 10px;
+       /*background-image: radial-gradient(ellipse at left, #9FB7A3,white);
+       border-image: radial-gradient(ellipse at left, #9FB7A3,white);*/
+       z-index: 0;
+
+
+       
+   }
+
+
+   body>p{
+       width: 75%;
+   }
+   h1, h2, h5{
+       text-align: center;
+   }
+   h1{
+       font-size: 2em;
+       
+       color:#d63a12;
+   }
+
+
