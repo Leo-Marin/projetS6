@@ -15,19 +15,28 @@ boutonvalide.addEventListener("click", function (event) {
 });
 
 function verification(){
+    let reponseBackup = reponse.slice();
     let verif = true;
     let compt = 0;
     let maxi = reponse.length;
-    for (var i=0; i<reponse.length; i++){
+    for (var i=0; i<maxi; i++){
         let txt="e_id";
         txt = i+1 + txt;
         console.log(txt);
         let champi = document.getElementById(txt);
 
-        if (champi.value == null || champi.value != reponse[i]) {
+        if (champi.value == ""){
             verif = false;
+            champi.style.backgroundColor = "#ec7628";
+        }
+        else if(!reponseBackup.includes(champi.value)) {
+            verif = false;
+            champi.style.backgroundColor = "#d62e2e";
         }
         else{
+            let pos = reponseBackup.indexOf(champi.value);
+            reponseBackup.splice(pos,1);
+            champi.style.backgroundColor = "green";
             compt+=1;
         }
     }
