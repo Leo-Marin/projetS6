@@ -10,9 +10,14 @@ let champ5e = document.getElementById('5e_id');
 
 let reponse = ["A7","Anarchie","Deo favente","Julius","Rooftop","Julius 2"];
 
+let reset = document.getElementById('bout_reset');
+
 boutonvalide.addEventListener("click", function (event) {
     verification();
 });
+reset.addEventListener("click", function (event){
+    reinitialisation();
+})
 
 function verification(){
     let reponseBackup = reponse.slice();
@@ -22,7 +27,7 @@ function verification(){
     for (var i=0; i<maxi; i++){
         let txt="e_id";
         txt = i+1 + txt;
-        console.log(txt);
+        console.log(txt + " is verified");
         let champi = document.getElementById(txt);
 
         if (champi.value == ""){
@@ -52,4 +57,16 @@ function creationbalise(c,max){
     score.setAttribute('id','score_id');
     score.innerText = 'score : ' + c + '/' + max;
     return score;
+}
+
+function reinitialisation(){
+    let maxi = reponse.length;
+    for (var i=0; i<maxi; i++){
+        let txt="e_id";
+        txt = i+1 + txt;
+        console.log(txt + " is clear");
+        let champi = document.getElementById(txt);
+        champi.value = null;
+        champi.style.backgroundColor = "white";
+    }
 }
