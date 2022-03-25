@@ -59,9 +59,16 @@
        color:#d63a12;
    }
 
+   .champii { 
+    font-family: sans-serif;
+    font-size: 115%;
+    font-weight: bold;
+   }
 
 
-
+   .txtcenter {
+    text-align: center
+   }
 /* ----------------- bouton test ------------------ */
    .button {
     border: none;

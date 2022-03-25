@@ -1,6 +1,7 @@
 let boutonChangeTest = document.getElementById('lebutton');
 let boutonvalide = document.getElementById('valideid');
 
+let battle = document.getElementById('field');
 let corps = document.getElementById('main');
 let champ1e = document.getElementById('1e_id');
 let champ2e = document.getElementById('2e_id');
@@ -45,22 +46,27 @@ function verification(){
             compt+=1;
         }
     }
-    corps.appendChild(creationbalise(compt,maxi));
+    battle.appendChild(creationbalise(compt,maxi));
 }
 
 function creationbalise(c,max){
     let oldscore = document.getElementById('score_id');
     if(oldscore != null){
-        corps.removeChild(oldscore);
+        battle.removeChild(oldscore);
     }
     let score = document.createElement("p");
     score.setAttribute('id','score_id');
-    score.innerText = 'score : ' + c + '/' + max;
+    score.setAttribute('class','txtcenter');
+    score.innerText = 'SCORE : ' + c + '/' + max;
     return score;
 }
 
 function reinitialisation(){
     let maxi = reponse.length;
+    let score = document.getElementById('score_id');
+    if(score != null){
+        battle.removeChild(score);
+    }
     for (var i=0; i<maxi; i++){
         let txt="e_id";
         txt = i+1 + txt;
