@@ -20,8 +20,10 @@
         
                 <legend>Donnez le titre de tous les albums de SCH</legend>
                 <i><p> Ecoutez des extraits de ses albums pour vous aider !</p></i>
-                <p><iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6T18IOkKB5AiTOXlCQFNbI?utm_source=generator" width="250" height="80" frameBorder="0" 
-                    allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></p>
+                <div class="spoti">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4MKRzuD0XbI2NnR4NZvUql?utm_source=generator&theme=0" width="100%" height="380" 
+                    frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
                 <p>
                     <input type='hidden' name='action' value='valide'>
                     <label for="1e_id">1e</label> :
@@ -35,6 +37,7 @@
                     <label for="3e_id">3e</label> :
                     <input type="text" class="champii" name="3e" id="3e_id" required/>
                 </p>
+
                 <p>
                     <label for="4e_id">4e</label> :
                     <input type="text" class="champii" name="4e" id="4e_id" required/>
@@ -47,7 +50,7 @@
                     <label for="6e_id">6e</label> :
                     <input type="text" class="champii" name="6e" id="6e_id" required/>
                 </p> 
-    
+                <div class="timer" id="timer"></div>
                 <p>
             
                     <button type="button" class="button" id="valideid">

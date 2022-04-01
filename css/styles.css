@@ -59,15 +59,30 @@
        color:#d63a12;
    }
 
+   fieldset{
+       position:relative;
+   }
    .champii { 
     font-family: sans-serif;
     font-size: 115%;
     font-weight: bold;
    }
-
+   .timer {
+       position: absolute;
+       right: 20px;
+       top: 50px;
+       font-size: 500%;
+       font-weight: bold;
+   }
 
    .txtcenter {
     text-align: center
+   }
+
+   .spoti {
+       position: absolute;
+       left: 550px;
+       top: 60px;
    }
 /* ----------------- bouton test ------------------ */
    .button {
