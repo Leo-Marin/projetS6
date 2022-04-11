@@ -66,6 +66,8 @@ function creationbalise(c,max){
     score.setAttribute('id','score_id');
     score.setAttribute('class','txtcenter');
     let lescore = 0;
+    lescore = c*(temps)*10;
+    /*
     if(120-temps<20){
         lescore=c*10;
     }
@@ -75,10 +77,10 @@ function creationbalise(c,max){
         let divv = (120+a1)/120;
         lescore = Math.trunc((c * 10)/divv);
         console.log("le div " + divv);
-    }
-    console.log("c" + c);
-    if(lescore<0) lescore=0;
-    score.innerText = 'SCORE : ' + lescore + '/' + '60';
+    }*/
+    //console.log("c" + c);
+    //if(lescore<0) lescore=0;
+    score.innerText = 'SCORE : ' + lescore;
     return score;
 }
 
