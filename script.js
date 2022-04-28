@@ -1,3 +1,4 @@
+
 let boutonChangeTest = document.getElementById('lebutton');
 let boutonvalide = document.getElementById('valideid');
 
@@ -25,9 +26,48 @@ boutonvalide.addEventListener("click", function (event) {
 reset.addEventListener("click", function (event){
     reinitialisation();
 })
+/*
+async function getData(){
+    const reponse = await fetch('data.csv');
+    const data = await reponse.text();
+    console.log(data);
+}
+getData();*/
+
+/*
+const fs = require('fs');
+let lesliens;
+
+
+function gestionIFrame(txt){
+    
+    const frame = "iframe";
+    let i=0;
+    let j=1;
+    while(txt[i]!=";"){
+        let link ="";
+
+        if(txt[i]==","){
+            let nameframe = frame + j;
+            let baliseframe = document.getElementById(nameframe);
+            baliseframe.src = link; 
+            j++;
+
+        }
+        link += txt[i];
+        i++;
+    }
+}
+
+gestionIFrame("data.csv");
+
+*/
+
+
 
 function verification(){
     let reponseBackup = reponse.slice();
+    console.log(reponseBackup);
     let verif = true;
     let compt = 0;
     let maxi = reponse.length;
@@ -41,14 +81,15 @@ function verification(){
             verif = false;
             champi.style.backgroundColor = "#ec7628";
         }
-        else if(!reponseBackup.includes(champi.value)) {
+        //else if(!reponseBackup.includes(champi.value)) {
+        else if(reponseBackup[i]!=champi.value){
             verif = false;
-            champi.style.backgroundColor = "#d62e2e";
+            champi.style.backgroundColor = "#FF4343";
         }
         else{
-            let pos = reponseBackup.indexOf(champi.value);
-            reponseBackup.splice(pos,1);
-            champi.style.backgroundColor = "green";
+            /*let pos = reponseBackup.indexOf(champi.value);
+            reponseBackup.splice(pos,1);*/
+            champi.style.backgroundColor = "#99FF1F";
             compt+=1;
         }
 
@@ -136,3 +177,51 @@ function diminuerTemps() {
 
   let idinter = setInterval(diminuerTemps, 1000);
 
+
+
+
+
+
+
+
+
+
+
+
+  //csv
+/*
+let array = $.csv.toArrays(csv, {
+    delimiter: "'", 
+    separator: ';', // Sets a custom field separator character
+  });
+
+
+const url = "C:\Users\acidk\Desktop\projetS6GIT\data.csv";
+const nomfile = "data.csv";
+const donne = fetch(nomfile);
+console.log(donne);
+
+const filecsv = document.getElementById("csvfile") ;
+//filecsv.style.display = "none";
+const uploadconfirm = document.getElementById('uploadconfirm').
+addEventListener('click', () => {
+    console.log(document.getElementById("csvfile").files[0]);
+    Papa.parse(document.getElementById("csvfile").files[0],
+    {
+        download: true,
+        header: true,
+        skipEmptyLines: true,
+        complete: function(results){
+            console.log(results);
+    }
+    });
+});
+//let testdingue = Papa.parse("data.csv".files[0],) ;
+//console.log(reponseCsv);
+//console.log(testdingue);
+
+
+
+
+
+*/
