@@ -16,34 +16,31 @@
         <h1> TEST DE CONNAISSANCE SUR LA MUSIQUE</h1>
         <hr>
         <form method="get" action="index.html">
-            <div class="container">
-            <button type="button" class="button" id="bout_reset"><span>Reinitialiser</span></button>
-            </div>
             <fieldset id="field">
-        
+                
                 <legend>Donnez le titre de tous les albums de SCH</legend>
                 <i><p> Ecoutez des extraits de ses albums pour vous aider !</p></i>
                 <div class="spoti">
-
+                    
                     <iframe id="iframe1" style="border-radius:12px" src="https://open.spotify.com/embed/track/3GA0XILGuMHjTTGcQtP7lu?utm_source=generator&theme=0" width="400" height="80" frameBorder="0" allowfullscreen=""
-                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe><br>
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe><br>
                      
-                     <iframe id="iframe2" style="border-radius:12px" src="https://open.spotify.com/embed/track/29kjIJkoNKQCdQXkeCUWIO?utm_source=generator&theme=0" width="400" height="80" frameBorder="0" allowfullscreen="" 
-                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe><br>
-                     
-                     <iframe id="iframe3" style="border-radius:12px" src="https://open.spotify.com/embed/track/6JMdhGfyz9C4kA4mTc6y9C?utm_source=generator&theme=0" width="400" height="80" frameBorder="0" allowfullscreen="" 
-                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe><br>
-                
-                     <iframe id="iframe4" style="border-radius:12px" src="https://open.spotify.com/embed/track/6GzVDBNNPqBa465hLchSvQ?utm_source=generator&theme=0" width="400" height="80" frameBorder="0" allowfullscreen="" 
-                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe><br>
-                
-                     <iframe id="iframe5" style="border-radius:12px" src="https://open.spotify.com/embed/track/0GN6DWiR9Pf2su3vJF5c0x?utm_source=generator&theme=0" width="400" height="80" frameBorder="0" allowfullscreen=""
-                      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe><br>
-
-                      <iframe id="iframe6" style="border-radius:12px" src="https://open.spotify.com/embed/track/2FW05UBkhS6AInXBRWbBFo?utm_source=generator&theme=0" width="400" height="80" frameBorder="0" allowfullscreen="" 
-                      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe><br>
-
-                    </div>
+                    <iframe id="iframe2" style="border-radius:12px" src="https://open.spotify.com/embed/track/29kjIJkoNKQCdQXkeCUWIO?utm_source=generator&theme=0" width="400" height="80" frameBorder="0" allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe><br>
+                    
+                    <iframe id="iframe3" style="border-radius:12px" src="https://open.spotify.com/embed/track/6JMdhGfyz9C4kA4mTc6y9C?utm_source=generator&theme=0" width="400" height="80" frameBorder="0" allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe><br>
+                    
+                    <iframe id="iframe4" style="border-radius:12px" src="https://open.spotify.com/embed/track/6GzVDBNNPqBa465hLchSvQ?utm_source=generator&theme=0" width="400" height="80" frameBorder="0" allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe><br>
+                    
+                    <iframe id="iframe5" style="border-radius:12px" src="https://open.spotify.com/embed/track/0GN6DWiR9Pf2su3vJF5c0x?utm_source=generator&theme=0" width="400" height="80" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe><br>
+                    
+                    <iframe id="iframe6" style="border-radius:12px" src="https://open.spotify.com/embed/track/2FW05UBkhS6AInXBRWbBFo?utm_source=generator&theme=0" width="400" height="80" frameBorder="0" allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe><br>
+                    
+                </div>
                 <p>
                     <input type='hidden' name='action' value='valide'>
                     <label for="1e_id">1e</label> :
@@ -58,7 +55,7 @@
                     <label for="3e_id">3e</label> :
                     <input type="text" class="champii" name="3e" id="3e_id" required/>
                 </p>
-
+                
                 <p>
                     <label for="4e_id">4e</label> :
                     <input type="text" class="champii" name="4e" id="4e_id" required/>
@@ -72,17 +69,27 @@
                     <input type="text" class="champii" name="6e" id="6e_id" required/>
                 </p> 
                 <div class="timer" id="timer"></div>
-                <p>
-            
+
+                <div class="buttonR">
+                    <button type="button" class="button" id="bout_reset">
+                        <span>Reinitialiser</span>
+                    </button>
+                </div>
+                
+                <div class="buttonV">    
                     <button type="button" class="button" id="valideid">
                         <span>Valide les reponses</span>
                     </button>
-                </p>
+                </div>
 
+              <br>
+              <br>
+              
+                
             </fieldset> 
         </form>
         <i><p>Les réponses sont : A7, Anarchie, Deo favente, Julius, Rooftop, Julius 2</p>
-        <p>Attention les réponses sont sensibles aux majuscules et accents</p></i>
-    </div>
+            <p>Attention les réponses sont sensibles aux majuscules et accents</p></i>
+        </div>
 </body>
 </html>

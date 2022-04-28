@@ -71,6 +71,8 @@ function verification(){
     let verif = true;
     let compt = 0;
     let maxi = reponse.length;
+    boutonvalide.setAttribute('class','buttonVdisa');
+    boutonvalide.setAttribute("disabled","disabled");
     for (var i=0; i<maxi; i++){
         let txt="e_id";
         txt = i+1 + txt;
@@ -128,6 +130,7 @@ function creationbalise(c,max){
 function reinitialisation(){
     let maxi = reponse.length;
     let score = document.getElementById('score_id');
+    boutonvalide.setAttribute('class','button');
     if(score != null){
         battle.removeChild(score);
     }
@@ -145,6 +148,7 @@ function reinitialisation(){
     champ4e.removeAttribute("disabled");
     champ5e.removeAttribute("disabled");
     champ6e.removeAttribute("disabled");
+    boutonvalide.removeAttribute("disabled");
     temps=120;
     clearInterval(idinter);
     idinter = setInterval(diminuerTemps, 1000);
